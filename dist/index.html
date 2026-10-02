@@ -2,18 +2,37 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f5ef"><meta name="description" content="有数：用生活经验，猜世界的另一种尺度。十道中文趣味估算题。">
+  <meta name="theme-color" content="#a6bad4"><meta name="description" content="有数：用生活经验，猜世界的另一种尺度。十道中文趣味估算题。">
   <title>有数 · 凭感觉，也有数</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23283d32'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-size='24' fill='%23dcf66a'%3E≈%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233c557b'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-size='24' fill='%23f6ff00'%3E≈%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css"><script src="questions.js" defer></script><script src="app.js" defer></script>
 </head>
 <body>
+  <div class="site-shell">
   <header class="site-header"><a class="brand" href="./" aria-label="有数首页"><span class="brand-mark">≈</span><span>有数<span class="brand-en">YOUSHU</span></span></a><div class="header-actions"><button class="plain-button" id="header-summary-button">成绩</button><button class="plain-button" id="help-button">怎么玩 <span aria-hidden="true">?</span></button></div></header>
   <main class="layout">
-    <aside class="sidebar"><div class="edition-label">THE ESTIMATION CLUB</div><h1>凭感觉，<br>也有数<span class="period">。</span></h1><p class="intro">不必知道答案。<br>从你知道的事情开始猜。</p><div class="edition"><span>试玩题册</span><strong>VOL. 001</strong></div><div id="question-nav" class="question-nav" aria-label="选择题目"></div><div class="sidebar-bottom"><span>十道题，十种看世界的方式。</span><button id="summary-button" class="plain-button">我的成绩</button></div></aside>
-    <section class="game-column" aria-label="估算游戏"><div class="game-meta"><span id="progress-label">QUESTION 01 / 10</span><span class="meta-pill">中文试玩版</span></div><div class="progress-track"><div id="progress-fill"></div></div><div id="game" aria-live="polite"></div><footer class="game-footer"><span>猜一猜。算一算。原来如此。</span><button class="plain-button" id="calculator-button">打开计算器</button></footer></section>
+    <aside class="sidebar">
+      <div class="edition-label">好奇心 · 估算实验室</div>
+      <div class="progress-instrument" aria-label="挑战完成进度">
+        <svg class="progress-dial" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="176" class="dial-outer"/><g id="dial-ticks"></g><path d="M 98.18 301.82 A 144 144 0 1 1 301.82 301.82" class="dial-track"/><path id="dial-fill" d="M 98.18 301.82 A 144 144 0 1 1 301.82 301.82" pathLength="100" stroke-dasharray="0 100" class="dial-fill"/></svg>
+        <div class="dial-reading"><span class="dial-caption">挑战进度</span><div><strong id="dial-value">0</strong><span>%</span></div><small>十道题，十种尺度</small></div>
+        <span class="dial-label dial-label-start">0</span><span class="dial-label dial-label-end">100</span>
+      </div>
+      <div class="navigation-panel"><div class="navigation-heading"><span>题目导航</span><span class="active-badge" id="challenge-status">进行中</span></div><div id="question-nav" class="question-nav" aria-label="选择题目"></div><div class="sidebar-bottom"><span>自由选题，逐个揭晓。</span><button id="summary-button" class="plain-button">我的成绩</button></div></div>
+      <div class="sidebar-title"><h1>凭感觉，<br>也有数。</h1><p class="intro">用好奇心，丈量日常。</p><span class="edition">YOUSHU / VOL. 001</span></div>
+    </aside>
+    <section class="game-column" aria-label="估算游戏">
+      <div class="dashboard-metrics">
+        <div class="metric-card"><span class="metric-label">已完成</span><div class="metric-value"><strong id="completed-count">0</strong><span>/ 10 题</span></div><div class="progress-track"><div id="progress-fill"></div></div></div>
+        <button class="metric-card metric-report" id="metric-summary-button"><span class="metric-label">平均误差</span><strong id="average-ratio">—</strong><span class="metric-note">越接近 1× 越好</span></button>
+        <div class="metric-card game-meta"><span class="metric-label">当前题目</span><strong id="progress-label">01 / 10</strong><span class="meta-pill">中文试玩 · VOL.001</span></div>
+      </div>
+      <div id="game" aria-live="polite"></div>
+      <footer class="game-footer"><span>猜一猜。算一算。原来如此。</span><button class="plain-button" id="calculator-button"><span class="calculator-icon" aria-hidden="true">＋</span>草稿计算器</button></footer>
+    </section>
   </main>
-  <div class="page-foot"><span>有数 © 2026</span><span>用好奇心，丈量日常。</span></div>
+  <div class="page-foot"><span>有数 © 2026</span><span>THE ESTIMATION LAB</span></div>
+  </div>
   <dialog id="help-dialog"><button class="dialog-close" aria-label="关闭">×</button><span class="eyebrow">HOW TO PLAY</span><h2>猜得有多接近？</h2><ol class="help-list"><li><b>找一个生活中的参照</b><p>先别查答案。凭直觉也好，拆成几步估算也好。</p></li><li><b>输入数字，锁定你的猜测</b><p>可以写 7800、0.78 万或 7.8千；也可以使用计算器。</p></li><li><b>揭晓答案，看看另一种尺度</b><p>误差越接近 1× 越好。猜 50 或 200，真实答案为 100，都是 2×。</p></li></ol><p class="small-note">有区间的估算题，落在参考区间内记为 1×。总成绩是已答题误差倍数的平均值。答题进度只保存在当前浏览器。</p><button class="primary-button dialog-dismiss">开始猜</button></dialog>
   <dialog id="calculator-dialog"><button class="dialog-close" aria-label="关闭">×</button><span class="eyebrow">NAPKIN MATH</span><h2>草稿计算器</h2><label for="calculation">写下你的计算</label><input id="calculation" placeholder="例如：30000 × 4 ÷ 60" autocomplete="off"><p id="calculation-result" aria-live="polite">支持 + − × ÷ 和括号</p><div class="dialog-actions"><button class="secondary-button" id="calculate-button">计算</button><button class="primary-button" id="use-calculation">填入猜测</button></div></dialog>
   <dialog id="summary-dialog" class="summary-dialog"><button class="dialog-close" aria-label="关闭">×</button><div id="summary-content"></div></dialog>
