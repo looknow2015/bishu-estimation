@@ -1,4 +1,4 @@
-const QUESTIONS = [
+[
   {
     "title": "你等咖啡的一分钟里，瑞幸大约卖出了多少杯饮品？",
     "short": "等咖啡的一分钟",
@@ -478,4 +478,4 @@ const QUESTIONS = [
     "editorialRound": 2,
     "revision": 1
   }
-];
+]
