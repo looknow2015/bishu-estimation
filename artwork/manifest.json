@@ -6,58 +6,58 @@
   },
   {
     "name": "02-palace",
-    "original": "artwork/originals/02-palace.png",
-    "web": "dist/assets/02-palace.webp"
+    "original": "artwork/originals/02-palace-glass-v1.png",
+    "web": "dist/assets/02-palace-glass-v1.webp"
   },
   {
     "name": "03-sake",
-    "original": "artwork/originals/03-sake.png",
-    "web": "dist/assets/03-sake.webp"
+    "original": "artwork/originals/03-sake-glass-v1.png",
+    "web": "dist/assets/03-sake-glass-v1.webp"
   },
   {
     "name": "04-cloud",
-    "original": "artwork/originals/04-cloud.png",
-    "web": "dist/assets/04-cloud.webp"
+    "original": "artwork/originals/04-cloud-glass-v1.png",
+    "web": "dist/assets/04-cloud-glass-v1.webp"
   },
   {
     "name": "05-monkey",
-    "original": "artwork/originals/05-monkey.png",
-    "web": "dist/assets/05-monkey.webp"
+    "original": "artwork/originals/05-monkey-glass-v1.png",
+    "web": "dist/assets/05-monkey-glass-v1.webp"
   },
   {
     "name": "06-mosquito",
-    "original": "artwork/originals/06-mosquito.png",
-    "web": "dist/assets/06-mosquito.webp"
+    "original": "artwork/originals/06-mosquito-glass-v1.png",
+    "web": "dist/assets/06-mosquito-glass-v1.webp"
   },
   {
     "name": "07-venus",
-    "original": "artwork/originals/07-venus.png",
-    "web": "dist/assets/07-venus.webp"
+    "original": "artwork/originals/07-venus-glass-v1.png",
+    "web": "dist/assets/07-venus-glass-v1.webp"
   },
   {
     "name": "08-strawberry",
-    "original": "artwork/originals/08-strawberry.png",
-    "web": "dist/assets/08-strawberry.webp"
+    "original": "artwork/originals/08-strawberry-glass-v1.png",
+    "web": "dist/assets/08-strawberry-glass-v1.webp"
   },
   {
     "name": "09-robot",
-    "original": "artwork/originals/09-robot.png",
-    "web": "dist/assets/09-robot.webp"
+    "original": "artwork/originals/09-robot-glass-v1.png",
+    "web": "dist/assets/09-robot-glass-v1.webp"
   },
   {
     "name": "10-popcorn",
-    "original": "artwork/originals/10-popcorn.png",
-    "web": "dist/assets/10-popcorn.webp"
+    "original": "artwork/originals/10-popcorn-glass-v1.png",
+    "web": "dist/assets/10-popcorn-glass-v1.webp"
   },
   {
     "name": "11-beer",
-    "original": "artwork/originals/11-beer.png",
-    "web": "dist/assets/11-beer.webp"
+    "original": "artwork/originals/11-beer-glass-v1.png",
+    "web": "dist/assets/11-beer-glass-v1.webp"
   },
   {
     "name": "12-otter",
-    "original": "artwork/originals/12-otter.png",
-    "web": "dist/assets/12-otter.webp"
+    "original": "artwork/originals/12-otter-glass-v1.png",
+    "web": "dist/assets/12-otter-glass-v1.webp"
   },
   {
     "name": "13-hummingbird",
@@ -66,37 +66,37 @@
   },
   {
     "name": "14-brain",
-    "original": "artwork/originals/14-brain.png",
-    "web": "dist/assets/14-brain.webp"
+    "original": "artwork/originals/14-brain-glass-v1.png",
+    "web": "dist/assets/14-brain-glass-v1.webp"
   },
   {
     "name": "15-eye",
-    "original": "artwork/originals/15-eye.png",
-    "web": "dist/assets/15-eye.webp"
+    "original": "artwork/originals/15-eye-glass-v1.png",
+    "web": "dist/assets/15-eye-glass-v1.webp"
   },
   {
     "name": "16-elevator",
-    "original": "artwork/originals/16-elevator.png",
-    "web": "dist/assets/16-elevator.webp"
+    "original": "artwork/originals/16-elevator-glass-v1.png",
+    "web": "dist/assets/16-elevator-glass-v1.webp"
   },
   {
     "name": "17-film",
-    "original": "artwork/originals/17-film.png",
-    "web": "dist/assets/17-film.webp"
+    "original": "artwork/originals/17-film-glass-v1.png",
+    "web": "dist/assets/17-film-glass-v1.webp"
   },
   {
     "name": "18-piano",
-    "original": "artwork/originals/18-piano.png",
-    "web": "dist/assets/18-piano.webp"
+    "original": "artwork/originals/18-piano-glass-v1.png",
+    "web": "dist/assets/18-piano-glass-v1.webp"
   },
   {
     "name": "19-melting-clock",
-    "original": "artwork/originals/19-melting-clock.png",
-    "web": "dist/assets/19-melting-clock.webp"
+    "original": "artwork/originals/19-melting-clock-glass-v1.png",
+    "web": "dist/assets/19-melting-clock-glass-v1.webp"
   },
   {
     "name": "20-cd",
-    "original": "artwork/originals/20-cd.png",
-    "web": "dist/assets/20-cd.webp"
+    "original": "artwork/originals/20-cd-glass-v1.png",
+    "web": "dist/assets/20-cd-glass-v1.webp"
   }
 ]

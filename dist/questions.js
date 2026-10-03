@@ -46,8 +46,8 @@ const QUESTIONS = [
     "revision": 1,
     "visual": {
       "kind": "icon",
-      "asset": "assets/02-palace.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/02-palace-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     }
   },
@@ -107,8 +107,8 @@ const QUESTIONS = [
     "visual": {
       "kind": "icon",
       "motif": "半开的行李箱与一只示意清酒瓶；不展示酒瓶总数或真实排列层数",
-      "asset": "assets/03-sake.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/03-sake-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     }
   },
@@ -133,8 +133,8 @@ const QUESTIONS = [
     "revision": 1,
     "visual": {
       "kind": "icon",
-      "asset": "assets/04-cloud.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/04-cloud-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     }
   },
@@ -159,8 +159,8 @@ const QUESTIONS = [
     "revision": 1,
     "visual": {
       "kind": "icon",
-      "asset": "assets/05-monkey.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/05-monkey-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     }
   },
@@ -185,8 +185,8 @@ const QUESTIONS = [
     "revision": 1,
     "visual": {
       "kind": "icon",
-      "asset": "assets/06-mosquito.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/06-mosquito-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     }
   },
@@ -211,8 +211,8 @@ const QUESTIONS = [
     "revision": 1,
     "visual": {
       "kind": "icon",
-      "asset": "assets/07-venus.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/07-venus-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     }
   },
@@ -236,8 +236,8 @@ const QUESTIONS = [
     "visual": {
       "kind": "icon",
       "motif": "一颗草莓和一个空白聊天气泡；小籽仅示意，不画成可逐个计数的真实数量",
-      "asset": "assets/08-strawberry.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/08-strawberry-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     },
     "editorialRound": 2,
@@ -263,8 +263,8 @@ const QUESTIONS = [
     "visual": {
       "kind": "motion",
       "motif": "小机器人面对棒棒糖，舌片轻轻伸缩；糖果保持完整，不显示次数或消耗速度",
-      "asset": "assets/09-robot.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/09-robot-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true,
       "motion": "robot"
     },
@@ -291,8 +291,8 @@ const QUESTIONS = [
     "visual": {
       "kind": "motion",
       "motif": "一粒爆米花轻弹一次，增加两条小动势线；不演示前后真实比例",
-      "asset": "assets/10-popcorn.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/10-popcorn-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true,
       "motion": "popcorn"
     },
@@ -319,8 +319,8 @@ const QUESTIONS = [
     "visual": {
       "kind": "motion",
       "motif": "简洁玻璃杯里三四个气泡缓慢上浮；数量和速度都只作示意",
-      "asset": "assets/11-beer.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/11-beer-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true,
       "motion": "beer"
     },
@@ -346,9 +346,9 @@ const QUESTIONS = [
     "url": "https://www.nps.gov/places/sea-otter.htm",
     "visual": {
       "kind": "icon",
-      "motif": "海獭头肩的原创简洁立体图标；不表示真实毛发密度",
-      "asset": "assets/12-otter.webp",
-      "style": "original soft 3D icon",
+      "motif": "海獭头肩的原创半透明简洁图标；不表示真实毛发密度",
+      "asset": "assets/12-otter-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     },
     "editorialRound": 2,
@@ -401,8 +401,8 @@ const QUESTIONS = [
     "visual": {
       "kind": "icon",
       "motif": "简化大脑和空白吊牌；不出现能效档位、数字或灯泡参照物",
-      "asset": "assets/14-brain.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/14-brain-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     },
     "editorialRound": 2,
@@ -428,8 +428,8 @@ const QUESTIONS = [
     "visual": {
       "kind": "motion",
       "motif": "一只简洁眼睛偶尔眨一下；不按人体真实眨眼频率或时长播放",
-      "asset": "assets/15-eye.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/15-eye-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true,
       "motion": "eye"
     },
@@ -456,8 +456,8 @@ const QUESTIONS = [
     "visual": {
       "kind": "icon",
       "motif": "电梯门、向上箭头和一颗星星；不显示距离刻度或移动速度",
-      "asset": "assets/16-elevator.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/16-elevator-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     },
     "editorialRound": 2,
@@ -483,8 +483,8 @@ const QUESTIONS = [
     "visual": {
       "kind": "icon",
       "motif": "胶片盘与一小段展开的胶片；不放人物、车或秤作为重量提示",
-      "asset": "assets/17-film.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/17-film-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     },
     "editorialRound": 2,
@@ -510,8 +510,8 @@ const QUESTIONS = [
     "visual": {
       "kind": "icon",
       "motif": "简化三角钢琴轮廓，盖板内有几根弦；不出现大型动物或卡车参照",
-      "asset": "assets/18-piano.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/18-piano-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     },
     "editorialRound": 2,
@@ -537,8 +537,8 @@ const QUESTIONS = [
     "visual": {
       "kind": "icon",
       "motif": "原创融化钟图标；不是达利原作的复制或缩略图，不含尺寸参照",
-      "asset": "assets/19-melting-clock.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/19-melting-clock-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     },
     "editorialRound": 2,
@@ -564,8 +564,8 @@ const QUESTIONS = [
     "visual": {
       "kind": "icon",
       "motif": "CD 轮廓和一小段延伸的曲线；不把轨道画成真实间距或长度",
-      "asset": "assets/20-cd.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/20-cd-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     },
     "editorialRound": 2,
