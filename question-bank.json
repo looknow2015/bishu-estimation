@@ -40,50 +40,61 @@
     "revision": 1
   },
   {
-    "title": "一只登机箱限重8公斤，不装衣服改装乒乓球，大约能塞进去多少个？",
-    "short": "行李箱里的乒乓球",
+    "title": "一个26寸的行李箱，最多能装多少瓶720毫升的清酒？",
+    "short": "行李箱里的清酒",
     "category": "空间 · 奇怪的行李",
-    "unit": "个",
-    "answer": 608.7676576265047,
-    "min": 550,
-    "max": 650,
-    "display": "约 600",
-    "condition": "参考一款外尺寸55×40×20厘米、标称容量34升、空箱2.9公斤的登机箱。8公斤包含箱子重量；球完整、散装、不带包装，不刻意逐个紧密排列。",
-    "explanation": "8公斤是箱子连同内容物的重量上限，箱子能装多少个球还要看容积。本题采用新秀丽S’Cure 55厘米箱的公开规格：容量34升、空箱2.9公斤。乒乓球直径约4厘米，每个外部体积约33.5立方厘米；按散装时约六成空间被球占据，估算能装约600个。",
-    "math": "34,000立方厘米 × 约60% ÷ 33.5立方厘米 ≈ 610个；600个 × 2.7克 + 2.9公斤 ≈ 4.52公斤",
-    "after": "这是指定箱型与散装方式的模型估算，并非装箱实测。球之间的空隙、箱体形状和内部结构都会影响数量，采用550—650个作参考区间。连箱重量低于本题设定的8公斤，因此这里先受空间限制。",
-    "source": "新秀丽S’Cure产品规格、国际乒联球规格与东航随身行李规定",
-    "url": "https://www.samsonite.ro/cataloage/samsonite-catalog-2022.pdf",
+    "unit": "瓶",
+    "answer": 30,
+    "min": 25,
+    "max": 35,
+    "display": "约 30",
+    "condition": "参考一款26寸行李箱和常见720毫升清酒瓶。去掉礼盒，不加防震包装，酒瓶整齐平放、不交错瓶颈；只按空间容量估算，不计托运限重。",
+    "explanation": "720毫升是酒液的容量，并不是整只瓶子占用的空间。本题参考DELSEY UNITED 26寸箱：厂家标注的箱内尺寸换算后约为59.1×43.8×26.7厘米；浅井硝子的清酒720 PP瓶，瓶身直径7.9厘米、高29.2厘米。把箱内空间简化成长方体，瓶子同向平放，沿箱长放2瓶、箱宽放5排、箱深叠3层，得到约30瓶。",
+    "math": "箱长2瓶 × 箱宽5排 × 箱深3层 = 30瓶（按整瓶外形排列，而非用箱内容积÷720毫升）",
+    "after": "约30瓶是指定箱型、瓶型和整齐摆放方式下的简化估算，并非实装测量或任意摆法下的严格最大值。箱内圆角、拉杆槽、瓶盖及内衬会减少余量；瓶颈交错、换瓶型或增加包装也会改变结果。游戏采用25—35瓶作为估算容差区间，这一区间不是厂家公布的装箱数据。",
+    "source": "DELSEY UNITED 26寸箱内尺寸与浅井硝子清酒720 PP瓶外尺寸",
+    "url": "https://us.delsey.com/products/b4376981057-united-26-inch-check-in-suitcase-white",
     "id": "suitcase-pingpong",
     "editorialRound": 1,
     "editorialNumber": 4,
-    "revision": 2,
+    "revision": 3,
     "sources": [
       {
-        "label": "登机箱规格：新秀丽S’Cure Spinner 55",
-        "url": "https://www.samsonite.ro/cataloage/samsonite-catalog-2022.pdf"
+        "label": "行李箱内尺寸：DELSEY UNITED 26寸（Interior Dimensions）",
+        "url": "https://us.delsey.com/products/b4376981057-united-26-inch-check-in-suitcase-white"
       },
       {
-        "label": "乒乓球规格：国际乒联（40毫米、2.7克）",
-        "url": "https://db.ittf.com/sites/default/files/public/2021-06/2021ITTFHandbook.pdf"
-      },
-      {
-        "label": "重量与尺寸限制：东方航空",
-        "url": "https://global.ceair.com/global/static/Announcement/BaggageService/CarryingLuggageWithYou/"
+        "label": "清酒瓶规格：浅井硝子 清酒720 PP（79×79×292毫米）",
+        "url": "https://www.asai-glass.co.jp/product/2071/"
       }
     ],
     "model": {
-      "capacityLitres": 34,
-      "emptyCaseKg": 2.9,
-      "weightLimitKg": 8,
-      "ballDiameterCm": 4,
-      "ballMassGrams": 2.7,
-      "assumedPackingFraction": 0.6,
-      "estimateMethod": "sphere-envelope-volume, approximate random packing, then check total mass"
+      "caseModel": "DELSEY UNITED 26-inch",
+      "interiorDimensionsInches": [
+        23.25,
+        17.25,
+        10.5
+      ],
+      "interiorDimensionsCm": [
+        59.055,
+        43.815,
+        26.67
+      ],
+      "bottleModel": "ASAI GLASS 清酒720 PP",
+      "bottleVolumeMl": 720,
+      "bottleDiameterCm": 7.9,
+      "bottleHeightCm": 29.2,
+      "gridCounts": [
+        2,
+        5,
+        3
+      ],
+      "estimateMethod": "ideal rectangular interior, parallel full-bottle envelopes, no neck interleaving or protective packaging",
+      "referenceIntervalType": "editorial estimation tolerance, not manufacturer measurement"
     },
     "visual": {
       "kind": "icon",
-      "motif": "半开的登机箱与几个示意乒乓球；不显示球的总数或真实排列层数"
+      "motif": "半开的行李箱与一只示意清酒瓶；不展示酒瓶总数或真实排列层数"
     }
   },
   {
