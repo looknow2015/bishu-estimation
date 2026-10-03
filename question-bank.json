@@ -20,8 +20,8 @@
     "revision": 1,
     "visual": {
       "kind": "icon",
-      "asset": "assets/01-coffee.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/01-coffee-handdrawn-v1.webp",
+      "style": "handdrawn-crayon",
       "decorative": true
     }
   },
@@ -374,8 +374,8 @@
     "visual": {
       "kind": "icon",
       "motif": "蜂鸟侧影和一颗小心形；不画心电图或真实频率动画",
-      "asset": "assets/13-hummingbird.webp",
-      "style": "original soft 3D icon",
+      "asset": "assets/13-hummingbird-handdrawn-v1.webp",
+      "style": "handdrawn-crayon",
       "decorative": true
     },
     "editorialRound": 2,

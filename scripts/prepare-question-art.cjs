@@ -6,27 +6,33 @@ const source = '/tmp/bishu-question-art';
 const partial = process.argv.includes('--partial');
 const names = ['01-coffee','02-palace','03-sake','04-cloud','05-monkey','06-mosquito','07-venus','08-strawberry','09-robot','10-popcorn','11-beer','12-otter','13-hummingbird','14-brain','15-eye','16-elevator','17-film','18-piano','19-melting-clock','20-cd'];
 const motion = {8:'robot',9:'popcorn',10:'beer',14:'eye'};
+const overrides = {
+  '01-coffee': {source:'artwork/handdrawn-samples/咖啡杯-手绘样稿.png',name:'01-coffee-handdrawn-v1'},
+  '13-hummingbird': {source:'artwork/handdrawn-samples/蜂鸟-手绘样稿.png',name:'13-hummingbird-handdrawn-v1'}
+};
 async function main() {
   fs.mkdirSync(path.join(root,'artwork/originals'),{recursive:true});
   fs.mkdirSync(path.join(root,'dist/assets'),{recursive:true});
   const assets = [];
   for (const name of names) {
-    const png = path.join(source, name+'.png');
+    const selectedName=overrides[name]?.name||name;
+    const png = overrides[name]?path.join(root,overrides[name].source):path.join(source,name+'.png');
     if (!fs.existsSync(png)) {
       if(partial)continue;
       throw new Error('Missing requested artwork: '+name);
     }
     const metadata = await sharp(png).metadata();
     if (!metadata.hasAlpha) throw new Error('Expected transparent asset: '+name);
-    fs.copyFileSync(png,path.join(root,'artwork/originals',name+'.png'));
-    await sharp(png).resize(512,512,{fit:'inside',withoutEnlargement:true}).webp({quality:85,alphaQuality:95}).toFile(path.join(root,'dist/assets',name+'.webp'));
-    assets.push({name,original:'artwork/originals/'+name+'.png',web:'dist/assets/'+name+'.webp'});
+    fs.copyFileSync(png,path.join(root,'artwork/originals',selectedName+'.png'));
+    await sharp(png).resize(512,512,{fit:'inside',withoutEnlargement:true}).webp({quality:85,alphaQuality:95}).toFile(path.join(root,'dist/assets',selectedName+'.webp'));
+    assets.push({name,original:'artwork/originals/'+selectedName+'.png',web:'dist/assets/'+selectedName+'.webp'});
   }
   const bank = JSON.parse(fs.readFileSync(path.join(root,'question-bank.json'),'utf8'));
   if (bank.length!==20) throw new Error('Unexpected question count');
   bank.forEach((q,i)=>{
-    if(!fs.existsSync(path.join(root,'dist/assets',names[i]+'.webp')))return;
-    q.visual={...q.visual,kind:motion[i]?'motion':'icon',asset:'assets/'+names[i]+'.webp',style:'original soft 3D icon',decorative:true};
+    const selectedName=overrides[names[i]]?.name||names[i];
+    if(!fs.existsSync(path.join(root,'dist/assets',selectedName+'.webp')))return;
+    q.visual={...q.visual,kind:motion[i]?'motion':'icon',asset:'assets/'+selectedName+'.webp',style:overrides[names[i]]?'handdrawn-crayon':'original soft 3D icon',decorative:true};
     if(motion[i])q.visual.motion=motion[i];
     if(i===11)q.visual.motif='海獭头肩的原创简洁立体图标；不表示真实毛发密度';
     if(i===18)q.visual.motif='原创融化钟图标；不是达利原作的复制或缩略图，不含尺寸参照';
