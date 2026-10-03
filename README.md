@@ -2,6 +2,12 @@
 
 面向中文用户的趣味估算游戏。当前题库共 20 题，使用蓝白半透明轻玻璃图标。
 
+## 在线访问与发布
+
+游戏地址：https://looknow2015.github.io/bishu-estimation/
+
+GitHub Pages 使用 GitHub Actions 发布 `dist/` 中的静态网页。推送到 `main` 的 `dist/` 更新会自动发布，也可在 Actions 中手动运行发布工作流。
+
 ## 运行
 
 无需安装依赖即可打开 `dist/index.html`。也可在项目目录启动静态服务器：
