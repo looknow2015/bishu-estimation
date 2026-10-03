@@ -20,8 +20,8 @@ const QUESTIONS = [
     "revision": 1,
     "visual": {
       "kind": "icon",
-      "asset": "assets/01-coffee-handdrawn-v1.webp",
-      "style": "handdrawn-crayon",
+      "asset": "assets/01-coffee-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     }
   },
@@ -374,8 +374,8 @@ const QUESTIONS = [
     "visual": {
       "kind": "icon",
       "motif": "蜂鸟侧影和一颗小心形；不画心电图或真实频率动画",
-      "asset": "assets/13-hummingbird-handdrawn-v1.webp",
-      "style": "handdrawn-crayon",
+      "asset": "assets/13-hummingbird-glass-v1.webp",
+      "style": "translucent-glass",
       "decorative": true
     },
     "editorialRound": 2,

@@ -46,7 +46,7 @@ function questionArtwork(q){
  const visual=q.visual;
  if(!visual?.asset)return '';
  const motion=visual.motion?` art-motion-${visual.motion}`:'';
- const style=visual.style==='handdrawn-crayon'?' art-handdrawn':'';
+ const style=visual.style==='handdrawn-crayon'?' art-handdrawn':visual.style==='translucent-glass'?' art-glass':'';
  return `<figure class="question-visual${motion}${style}" aria-hidden="true"><img src="${escapeHTML(visual.asset)}" alt="" width="160" height="160" decoding="async" draggable="false"></figure>`;
 }
 function render(){const q=QUESTIONS[state.index],guess=state.answers[state.index],count=Object.keys(state.answers).length;document.title=`比数 · ${q.short}`;$('question-total').textContent=`/ ${TOTAL} 题`;$('progress-label').textContent=`${String(state.index+1).padStart(2,'0')} / ${TOTAL}`;$('completed-count').textContent=count;$('dial-value').textContent=Math.round(count/TOTAL*100);$('dial-fill').setAttribute('stroke-dasharray',`${(count/TOTAL*100)} 100`);$('average-ratio').textContent=count?score(Object.entries(state.answers).reduce((total,[i,n])=>total+errorRatio(QUESTIONS[i],n),0)/count):'—';$('challenge-status').textContent=count===TOTAL?'已完成':'进行中';$('progress-fill').style.width=`${(count/TOTAL*100)}%`;$('question-nav').innerHTML=QUESTIONS.map((item,i)=>`<button class="nav-item ${i===state.index?'current':''} ${state.answers[i]!=null?'answered':''}" data-index="${i}" aria-label="第 ${i+1} 题：${escapeHTML(item.short)}${state.answers[i]!=null?'，已作答':''}" ${i===state.index?'aria-current="step"':''}>${String(i+1).padStart(2,'0')}</button>`).join('');$('question-nav').querySelectorAll('button').forEach(b=>b.onclick=()=>setIndex(Number(b.dataset.index)));

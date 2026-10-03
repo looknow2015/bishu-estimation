@@ -7,8 +7,8 @@ const partial = process.argv.includes('--partial');
 const names = ['01-coffee','02-palace','03-sake','04-cloud','05-monkey','06-mosquito','07-venus','08-strawberry','09-robot','10-popcorn','11-beer','12-otter','13-hummingbird','14-brain','15-eye','16-elevator','17-film','18-piano','19-melting-clock','20-cd'];
 const motion = {8:'robot',9:'popcorn',10:'beer',14:'eye'};
 const overrides = {
-  '01-coffee': {source:'artwork/handdrawn-samples/咖啡杯-手绘样稿.png',name:'01-coffee-handdrawn-v1'},
-  '13-hummingbird': {source:'artwork/handdrawn-samples/蜂鸟-手绘样稿.png',name:'13-hummingbird-handdrawn-v1'}
+  '01-coffee': {source:'artwork/glass-samples/咖啡杯-轻玻璃样稿.png',name:'01-coffee-glass-v1'},
+  '13-hummingbird': {source:'artwork/glass-samples/蜂鸟-轻玻璃样稿.png',name:'13-hummingbird-glass-v1'}
 };
 async function main() {
   fs.mkdirSync(path.join(root,'artwork/originals'),{recursive:true});
@@ -32,7 +32,7 @@ async function main() {
   bank.forEach((q,i)=>{
     const selectedName=overrides[names[i]]?.name||names[i];
     if(!fs.existsSync(path.join(root,'dist/assets',selectedName+'.webp')))return;
-    q.visual={...q.visual,kind:motion[i]?'motion':'icon',asset:'assets/'+selectedName+'.webp',style:overrides[names[i]]?'handdrawn-crayon':'original soft 3D icon',decorative:true};
+    q.visual={...q.visual,kind:motion[i]?'motion':'icon',asset:'assets/'+selectedName+'.webp',style:overrides[names[i]]?'translucent-glass':'original soft 3D icon',decorative:true};
     if(motion[i])q.visual.motion=motion[i];
     if(i===11)q.visual.motif='海獭头肩的原创简洁立体图标；不表示真实毛发密度';
     if(i===18)q.visual.motif='原创融化钟图标；不是达利原作的复制或缩略图，不含尺寸参照';
