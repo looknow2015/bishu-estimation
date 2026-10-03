@@ -12,3 +12,20 @@
 /* Larger question banks wrap into comfortable rows on narrow screens. */
 @media(max-width:760px){.question-nav{grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}.nav-item{min-height:38px}}
 @media(max-width:380px){.question-nav{grid-template-columns:repeat(5,minmax(0,1fr))}}
+
+/* Original question artwork: compact, decorative, and independent of the answer. */
+.question-visual{float:right;width:160px;height:160px;display:grid;place-items:center;margin:15px -8px 10px 20px;pointer-events:none;isolation:isolate}
+.question-visual img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 10px 12px #395c7d10)}
+.question-card form,.result-values{clear:both}
+.reveal .question-visual{width:112px;height:112px;margin-top:6px;margin-bottom:8px}
+.art-motion-robot img{animation:art-robot 2.2s ease-in-out 2}
+.art-motion-popcorn img{animation:art-popcorn 2s ease-in-out 2}
+.art-motion-beer img{animation:art-beer 2.4s ease-in-out 2}
+.art-motion-eye img{animation:art-eye 2.5s ease-in-out 2;transform-origin:50% 50%}
+@keyframes art-robot{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-5px) rotate(-2deg)}}
+@keyframes art-popcorn{0%,25%,65%,100%{transform:translateY(0) rotate(0)}40%{transform:translateY(-9px) rotate(-5deg)}50%{transform:translateY(-6px) rotate(4deg)}}
+@keyframes art-beer{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes art-eye{0%,42%,50%,100%{transform:scaleY(1)}46%{transform:scaleY(.12)}}
+@media(max-width:760px){.question-visual{width:115px;height:115px;margin:17px -6px 8px 14px}.reveal .question-visual{width:90px;height:90px}.question-title{margin-top:18px}.conditions{clear:both}}
+@media(max-width:380px){.question-visual{width:96px;height:96px;margin-left:10px}}
+@media(prefers-reduced-motion:reduce){.question-visual img{animation:none!important;transform:none!important}}

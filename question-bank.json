@@ -17,7 +17,13 @@
     "id": "luckin-per-minute",
     "editorialRound": 1,
     "editorialNumber": 1,
-    "revision": 1
+    "revision": 1,
+    "visual": {
+      "kind": "icon",
+      "asset": "assets/01-coffee.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
+    }
   },
   {
     "title": "每件故宫藏品只看一分钟，看完全部藏品要多少年？",
@@ -37,7 +43,13 @@
     "id": "forbidden-city-collection",
     "editorialRound": 1,
     "editorialNumber": 3,
-    "revision": 1
+    "revision": 1,
+    "visual": {
+      "kind": "icon",
+      "asset": "assets/02-palace.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
+    }
   },
   {
     "title": "一个26寸的行李箱，最多能装多少瓶720毫升的清酒？",
@@ -94,7 +106,10 @@
     },
     "visual": {
       "kind": "icon",
-      "motif": "半开的行李箱与一只示意清酒瓶；不展示酒瓶总数或真实排列层数"
+      "motif": "半开的行李箱与一只示意清酒瓶；不展示酒瓶总数或真实排列层数",
+      "asset": "assets/03-sake.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
     }
   },
   {
@@ -115,7 +130,13 @@
     "id": "cloud-water",
     "editorialRound": 1,
     "editorialNumber": 5,
-    "revision": 1
+    "revision": 1,
+    "visual": {
+      "kind": "icon",
+      "asset": "assets/04-cloud.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
+    }
   },
   {
     "title": "孙悟空沿着赤道翻一个筋斗，大约能绕地球几圈？",
@@ -135,7 +156,13 @@
     "id": "somersault-earth",
     "editorialRound": 1,
     "editorialNumber": 6,
-    "revision": 1
+    "revision": 1,
+    "visual": {
+      "kind": "icon",
+      "asset": "assets/05-monkey.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
+    }
   },
   {
     "title": "多少只蚊子各吃饱一次，才能凑满一茶匙血？",
@@ -155,7 +182,13 @@
     "id": "mosquito-blood",
     "editorialRound": 1,
     "editorialNumber": 7,
-    "revision": 1
+    "revision": 1,
+    "visual": {
+      "kind": "icon",
+      "asset": "assets/06-mosquito.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
+    }
   },
   {
     "title": "如果公司按金星的昼夜放一个“双休日”，相当于地球上休息多少天？",
@@ -175,7 +208,13 @@
     "id": "venus-weekend",
     "editorialRound": 1,
     "editorialNumber": 9,
-    "revision": 1
+    "revision": 1,
+    "visual": {
+      "kind": "icon",
+      "asset": "assets/07-venus.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
+    }
   },
   {
     "id": "strawberry-seeds",
@@ -196,7 +235,10 @@
     "url": "https://extension.illinois.edu/blogs/flowers-fruits-and-frass/2016-03-27-strawberries-revisited",
     "visual": {
       "kind": "icon",
-      "motif": "一颗草莓和一个空白聊天气泡；小籽仅示意，不画成可逐个计数的真实数量"
+      "motif": "一颗草莓和一个空白聊天气泡；小籽仅示意，不画成可逐个计数的真实数量",
+      "asset": "assets/08-strawberry.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
     },
     "editorialRound": 2,
     "revision": 1
@@ -220,7 +262,11 @@
     "url": "https://tootsie.com/scientific-studies/",
     "visual": {
       "kind": "motion",
-      "motif": "小机器人面对棒棒糖，舌片轻轻伸缩；糖果保持完整，不显示次数或消耗速度"
+      "motif": "小机器人面对棒棒糖，舌片轻轻伸缩；糖果保持完整，不显示次数或消耗速度",
+      "asset": "assets/09-robot.webp",
+      "style": "original soft 3D icon",
+      "decorative": true,
+      "motion": "robot"
     },
     "editorialRound": 2,
     "revision": 1
@@ -244,7 +290,11 @@
     "url": "https://www.popcorn.org/Learning/Science-Fair-Projects",
     "visual": {
       "kind": "motion",
-      "motif": "一粒爆米花轻弹一次，增加两条小动势线；不演示前后真实比例"
+      "motif": "一粒爆米花轻弹一次，增加两条小动势线；不演示前后真实比例",
+      "asset": "assets/10-popcorn.webp",
+      "style": "original soft 3D icon",
+      "decorative": true,
+      "motion": "popcorn"
     },
     "editorialRound": 2,
     "revision": 1
@@ -268,7 +318,11 @@
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8047704/",
     "visual": {
       "kind": "motion",
-      "motif": "简洁玻璃杯里三四个气泡缓慢上浮；数量和速度都只作示意"
+      "motif": "简洁玻璃杯里三四个气泡缓慢上浮；数量和速度都只作示意",
+      "asset": "assets/11-beer.webp",
+      "style": "original soft 3D icon",
+      "decorative": true,
+      "motion": "beer"
     },
     "editorialRound": 2,
     "revision": 1
@@ -291,8 +345,11 @@
     "source": "美国国家公园管理局 · Sea Otter",
     "url": "https://www.nps.gov/places/sea-otter.htm",
     "visual": {
-      "kind": "image",
-      "motif": "海獭面部与毛发的简洁近景，统一方形裁切；不叠加毛发计数图"
+      "kind": "icon",
+      "motif": "海獭头肩的原创简洁立体图标；不表示真实毛发密度",
+      "asset": "assets/12-otter.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
     },
     "editorialRound": 2,
     "revision": 1
@@ -316,7 +373,10 @@
     "url": "https://nationalzoo.si.edu/migratory-birds/hummingbirds",
     "visual": {
       "kind": "icon",
-      "motif": "蜂鸟侧影和一颗小心形；不画心电图或真实频率动画"
+      "motif": "蜂鸟侧影和一颗小心形；不画心电图或真实频率动画",
+      "asset": "assets/13-hummingbird.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
     },
     "editorialRound": 2,
     "revision": 1
@@ -340,7 +400,10 @@
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8364152/",
     "visual": {
       "kind": "icon",
-      "motif": "简化大脑和空白吊牌；不出现能效档位、数字或灯泡参照物"
+      "motif": "简化大脑和空白吊牌；不出现能效档位、数字或灯泡参照物",
+      "asset": "assets/14-brain.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
     },
     "editorialRound": 2,
     "revision": 1
@@ -364,7 +427,11 @@
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3545766/",
     "visual": {
       "kind": "motion",
-      "motif": "一只简洁眼睛偶尔眨一下；不按人体真实眨眼频率或时长播放"
+      "motif": "一只简洁眼睛偶尔眨一下；不按人体真实眨眼频率或时长播放",
+      "asset": "assets/15-eye.webp",
+      "style": "original soft 3D icon",
+      "decorative": true,
+      "motion": "eye"
     },
     "editorialRound": 2,
     "revision": 1
@@ -388,7 +455,10 @@
     "url": "https://www.mitsubishielectric.com/sites/GWS/en/our-stories/article/xx_ww_c_in1906_03.page",
     "visual": {
       "kind": "icon",
-      "motif": "电梯门、向上箭头和一颗星星；不显示距离刻度或移动速度"
+      "motif": "电梯门、向上箭头和一颗星星；不显示距离刻度或移动速度",
+      "asset": "assets/16-elevator.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
     },
     "editorialRound": 2,
     "revision": 1
@@ -412,7 +482,10 @@
     "url": "https://apnews.com/article/413bc36ac6ae68f422c06c9b1cc0ab0a",
     "visual": {
       "kind": "icon",
-      "motif": "胶片盘与一小段展开的胶片；不放人物、车或秤作为重量提示"
+      "motif": "胶片盘与一小段展开的胶片；不放人物、车或秤作为重量提示",
+      "asset": "assets/17-film.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
     },
     "editorialRound": 2,
     "revision": 1
@@ -436,7 +509,10 @@
     "url": "https://www.yamaha.com/en/musical_instrument_guide/piano/manufacturing/manufacturing003.html",
     "visual": {
       "kind": "icon",
-      "motif": "简化三角钢琴轮廓，盖板内有几根弦；不出现大型动物或卡车参照"
+      "motif": "简化三角钢琴轮廓，盖板内有几根弦；不出现大型动物或卡车参照",
+      "asset": "assets/18-piano.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
     },
     "editorialRound": 2,
     "revision": 1
@@ -459,8 +535,11 @@
     "source": "纽约现代艺术博物馆 · The Persistence of Memory",
     "url": "https://www.moma.org/collection/works/79018",
     "visual": {
-      "kind": "image",
-      "motif": "使用取得适当授权的画作缩略图，保留完整构图，不与可推断尺寸的物体并置"
+      "kind": "icon",
+      "motif": "原创融化钟图标；不是达利原作的复制或缩略图，不含尺寸参照",
+      "asset": "assets/19-melting-clock.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
     },
     "editorialRound": 2,
     "revision": 1
@@ -484,7 +563,10 @@
     "url": "https://openlearninglibrary.mit.edu/assets/courseware/v1/cb1a60ddb6edd9539f0aa8c467af91d7/asset-v1%3AMITx%2B3.15.3x%2B2T2017%2Btype%40asset%2Bblock/315NotesWeek9.pdf",
     "visual": {
       "kind": "icon",
-      "motif": "CD 轮廓和一小段延伸的曲线；不把轨道画成真实间距或长度"
+      "motif": "CD 轮廓和一小段延伸的曲线；不把轨道画成真实间距或长度",
+      "asset": "assets/20-cd.webp",
+      "style": "original soft 3D icon",
+      "decorative": true
     },
     "editorialRound": 2,
     "revision": 1
