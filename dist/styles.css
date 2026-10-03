@@ -30,3 +30,8 @@
 @media(max-width:760px){.question-visual{width:115px;height:115px;margin:17px -6px 8px 14px}.reveal .question-visual{width:90px;height:90px}.question-title{margin-top:18px}.conditions{clear:both}}
 @media(max-width:380px){.question-visual{width:96px;height:96px;margin-left:10px}}
 @media(prefers-reduced-motion:reduce){.question-visual img{animation:none!important;transform:none!important}}
+
+/* Five-question stages and persistent checkpoint reports. */
+.stage-nav{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}.stage-tab{border:1px solid #ffffff40;border-radius:10px;background:#ffffff10;color:#eff5ff;padding:8px 14px;font:14px var(--number)}.stage-tab.active{background:#f6ff00;color:#243f63;border-color:#f6ff00}.stage-tab:disabled{opacity:.35;cursor:not-allowed}.stage-review{width:100%;background:none;border:0;border-bottom:1px solid var(--line);color:inherit;text-align:left}.stage-review:hover{background:#dce6f4}.stage-result h2{font-size:28px;font-weight:500;margin:18px 0}.stage-result .summary-score{margin-top:24px}.question-nav{grid-template-columns:repeat(5,minmax(0,1fr))}#storage-status{line-height:1.5}@media(max-width:760px){.question-nav{grid-template-columns:repeat(5,minmax(0,1fr))}.stage-tab{padding:7px 15px}.game-footer>span{max-width:60%}.stage-result h2{font-size:25px}}
+
+.stage-summary-line{display:flex;justify-content:space-between;gap:15px;padding:12px 15px;background:#dce6f4;border-radius:12px;margin-bottom:8px;font-size:14px}.stage-summary-line b{font-weight:500}
