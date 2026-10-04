@@ -64,7 +64,7 @@ function parseGuess(raw,multiplier=1){const normalized=String(raw).normalize('NF
 function errorRatio(q,n){return n<q.min?q.min/n:n>q.max?n/q.max:1}
 function score(n){return n>999?number(n)+'×':n.toFixed(2)+'×'}
 function setIndex(index){if(!Number.isInteger(index)||index<0||index>=TOTAL)throw new Error(`题号必须是 1 到 ${TOTAL}。`);if(stageFor(index)>state.unlocked)throw new Error('完成当前关卡后再继续下一关。');state.index=index;state.phase='question';factor=1;save();render()}
-function submitGuess(raw,multiplier=1){if(state.answers[state.index]!=null)throw new Error('这道题已锁定猜测。');const value=parseGuess(raw,multiplier);state.answers[state.index]=value;if(stageComplete(STAGES[stageFor()]))state.phase='stage-result';save();render();return{question:state.index+1,guess:value,ratio:errorRatio(QUESTIONS[state.index],value)}}
+function submitGuess(raw,multiplier=1){if(state.answers[state.index]!=null)throw new Error('这道题已锁定猜测。');const value=parseGuess(raw,multiplier);state.answers[state.index]=value;state.phase='question';save();render();return{question:state.index+1,guess:value,ratio:errorRatio(QUESTIONS[state.index],value)}}
 function scaleChart(q,guess){
   const ratio=errorRatio(q,guess),cx=130,cy=112,r=78;
   const point=(value,rad=r)=>{const angle=(135+Math.log10(Math.min(100,Math.max(1,value)))/2*270)*Math.PI/180;return{x:cx+Math.cos(angle)*rad,y:cy+Math.sin(angle)*rad}};
